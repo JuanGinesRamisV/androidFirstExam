@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThridFragment">
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:max="255"
+        android:min="0"
+        android:progressDrawable="@drawable/red_progress"
+        android:thumb="@drawable/red_thumb"
+        />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redSeekBar"
+        android:max="255"
+        android:min="0"
+        android:layout_marginTop="5dp"
+        android:progressDrawable="@drawable/green_progress"
+        android:thumb="@drawable/green_thumb"
+        />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenSeekBar"
+        android:layout_marginTop="5dp"
+        android:max="255"
+        android:min="0"
+        android:progressDrawable="@drawable/blue_progress"
+        android:thumb="@drawable/blue_trhumb"
+        />
+
+    <Button
+        android:id="@+id/changeColorBtn"
+        android:layout_below="@id/blueSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/changeColorBtn"/>
+</RelativeLayout>

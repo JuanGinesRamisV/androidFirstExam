@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.examenjuanginesramis.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.examenjuanginesramis.SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/fragment1" />
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.examenjuanginesramis.ThridFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment2"/>
+</RelativeLayout>
